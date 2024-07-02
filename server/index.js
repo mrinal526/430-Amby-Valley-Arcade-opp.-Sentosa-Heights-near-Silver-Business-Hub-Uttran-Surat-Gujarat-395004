@@ -9,14 +9,14 @@ const handle = require('./handlers');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-// app.use(cors());
-app.use(cors(
-  {
-    origin: ["https://mern-vote-frontend.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+
+app.use(cors({
+  origin: 'https://mern-vote-frontend.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+}));
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
