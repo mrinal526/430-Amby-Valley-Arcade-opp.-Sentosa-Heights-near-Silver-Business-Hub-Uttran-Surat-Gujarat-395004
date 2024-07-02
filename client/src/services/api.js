@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const host = 'https://mern-vote-backend.vercel.app/api';
+const host = 'http://localhost:4000/api';
 
 export const setToken = token => {
   if (token) {
