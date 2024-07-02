@@ -15,7 +15,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   allowedHeaders: ['Content-Type', 'Authorization'] 
 }));
-
+app.options('*', cors()); // Enable preflight requests for all routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
