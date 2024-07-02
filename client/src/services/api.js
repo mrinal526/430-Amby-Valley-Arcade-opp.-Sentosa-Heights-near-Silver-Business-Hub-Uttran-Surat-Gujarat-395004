@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const host = 'https://four30-amby-valley-arcade-opp-sentosa-gzdo.onrender.com';
+const host = 'http://localhost:4000/api';
 
 export const setToken = token => {
   if (token) {
