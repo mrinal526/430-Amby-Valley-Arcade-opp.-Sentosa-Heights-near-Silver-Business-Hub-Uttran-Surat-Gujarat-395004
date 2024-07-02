@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const host = 'https://four30-amby-valley-arcade-opp-sentosa-h71r.onrender.com';
+const host = 'mern-poll-mrinals-projects-93df0e48.vercel.app';
 
 export const setToken = token => {
   if (token) {
