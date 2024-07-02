@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const host = 'mern-poll-mrinals-projects-93df0e48.vercel.app';
+const host = 'http://localhost:4000/api';
 
 export const setToken = token => {
   if (token) {
